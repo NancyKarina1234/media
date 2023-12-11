@@ -8,8 +8,10 @@ nav {
 }
 
 main {
+    display: grid;
     grid-area: seccion-principal;
     padding: 10px;
+    grid-template-columns: 1fr;
 }
 footer {
     grid-area: pie-de-pagina;
@@ -36,9 +38,14 @@ footer {
     grid-template-columns: 6rem 1fr;
     }
 
-}
+    @media (min-width: 992px)  {
+ main{
+    grid-template-columns: 1fr 1fr 1fr 1fr }
+     }
+    
 
-}
+
+
 
 .card{
     display: flex;

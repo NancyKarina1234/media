@@ -3,7 +3,8 @@ nav {
     grid-area: menu;
     background: #0037a1;
     color: white;
-    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 main {
@@ -17,7 +18,7 @@ footer {
     padding: 10px;
 }
 
-div {
+.todo {
     display: grid;
     border: 1px solid black;
     grid-template-rows: 1fr 10fr 1fr;
@@ -28,7 +29,7 @@ div {
 }
 
  @media (min-width: 992px) {
-div{
+.todo{
     grid-template-areas:"menu seccion-principal"
         "menu seccion-principal"
         "menu pie-de-pagina";
@@ -37,4 +38,23 @@ div{
 
 }
 
+}
 
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .texto{
+    align-items: center;
+    text-align: center;
+   
+}
+button {
+    border-radius: 0;
+    border: 0;
+    background-color: darkblue;
+    color: #fff;
+    padding: 0;
+    height: 30px;
+}
